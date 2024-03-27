@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #EFF2F9;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        main{
+            position: relative;
+        }
+
+        div#interno{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,50%);
+            width: 300px;
+            height: 345px;
+            /* padding-top: 367px;
+            padding-left: 810px; */
+            
+        }
+        h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+       
+       
+        input#emailogin{
+            width: 293px;
+            height: 38px;
+            border: 1px white ;
+            border-radius: 5px;
+        }
+        input#emailogin:hover{
+            border: 1px #66AFFF solid;
+        }
+        
+        input#senhalogin{
+            width: 293px;
+            height: 38px;
+            border: 1px white ;
+            border-radius: 5px;
+            
+        }
+        input#senhalogin:hover{
+            border: 1px #66AFFF solid;
+        }
+        input#botao{
+            background-color: #1DC763;
+            color: white;
+            display: block;
+            
+            width: 300px;
+            height: 48px;
+            border: none;
+            border-radius: 5px;
+        }
+        input#botao:hover{
+            border: 1px black solid;
+        }
+        div.campo{
+            padding-bottom: 30px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="interno">
+            <img src="imagem/Vector.png" alt="logo" srcset="">
+
+            <img id="bolinha" src="imagem/Vector2.png" 
+            alt="ponto">
+
+            <h1>Olá, faça login em sua conta.</h1>
+
+            <form action="login.php" method="post" autocomplete="on">
+
+                <div class="campo">
+                    <label style="color:#0079FF;" for="iemail">E-mail</label>
+                    <input id="emailogin"  class = "login" type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <label for="isenha">Senha</label>
+                    <input id="senhalogin"  class = "login" type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    
+                </div>
+            
+                <div>
+                    <input id="botao" type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
